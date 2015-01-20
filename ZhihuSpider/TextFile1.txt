@@ -1,0 +1,10 @@
+﻿SELECT   Id, Voteup, CreateTime, CollectCount, CommentCount, QuestionId
+FROM      AnswerSet
+ORDER BY CollectCount DESC
+
+
+SELECT   QuestionSet.Title, AnswerSet.Id, AnswerSet.Voteup, AnswerSet.CreateTime, AnswerSet.CollectCount, 
+                AnswerSet.CommentCount, AnswerSet.QuestionId, AnswerSet.Author
+FROM      AnswerSet INNER JOIN
+                QuestionSet ON AnswerSet.QuestionId = QuestionSet.Id
+ORDER BY AnswerSet.CollectCount DESC

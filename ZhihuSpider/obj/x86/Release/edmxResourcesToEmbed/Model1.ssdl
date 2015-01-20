@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="QuestionSet" EntityType="Model1.Store.QuestionSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnswerSet" EntityType="Model1.Store.AnswerSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="QuestionSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="decimal" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" />
+    <Property Name="AnswerCount" Type="decimal" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="true" />
+    <Property Name="Topic" Type="nvarchar" Nullable="false" />
+    <Property Name="FollowerCount" Type="decimal" Nullable="false" />
+    <Property Name="ViewCount" Type="decimal" Nullable="false" />
+    <Property Name="QuestionId" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnswerSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="decimal" Nullable="false" />
+    <Property Name="Voteup" Type="decimal" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="true" />
+    <Property Name="CollectCount" Type="decimal" Nullable="false" />
+    <Property Name="CommentCount" Type="decimal" Nullable="false" />
+    <Property Name="QuestionId" Type="decimal" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" Nullable="true" />
+    <Property Name="AuthorId" Type="nvarchar" Nullable="true" />
+  </EntityType>
+</Schema>

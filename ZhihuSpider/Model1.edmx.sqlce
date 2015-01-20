@@ -1,0 +1,78 @@
+
+-- --------------------------------------------------
+-- Entity Designer DDL Script for SQL Server Compact Edition
+-- --------------------------------------------------
+-- Date Created: 10/31/2014 10:05:11
+-- Generated from EDMX file: D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\Model1.edmx
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing FOREIGN KEY constraints
+-- NOTE: if the constraint does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+
+-- --------------------------------------------------
+-- Dropping existing tables
+-- NOTE: if the table does not exist, an ignorable error will be reported.
+-- --------------------------------------------------
+
+    DROP TABLE [QuestionSet];
+GO
+    DROP TABLE [AnswerSet];
+GO
+
+-- --------------------------------------------------
+-- Creating all tables
+-- --------------------------------------------------
+
+-- Creating table 'QuestionSet'
+CREATE TABLE [QuestionSet] (
+    [Id] decimal(18,0)  NOT NULL,
+    [Title] nvarchar(4000)  NOT NULL,
+    [AnswerCount] decimal(18,0)  NOT NULL,
+    [CreateTime] datetime  NULL,
+    [Topic] nvarchar(4000)  NOT NULL,
+    [FollowerCount] decimal(18,0)  NOT NULL,
+    [ViewCount] decimal(18,0)  NOT NULL,
+    [QuestionId] decimal(18,0)  NOT NULL
+);
+GO
+
+-- Creating table 'AnswerSet'
+CREATE TABLE [AnswerSet] (
+    [Id] decimal(18,0)  NOT NULL,
+    [Voteup] decimal(18,0)  NOT NULL,
+    [CreateTime] datetime  NULL,
+    [CollectCount] decimal(18,0)  NOT NULL,
+    [CommentCount] decimal(18,0)  NOT NULL,
+    [QuestionId] decimal(18,0)  NOT NULL,
+    [Author] nvarchar(4000)  NULL,
+    [AuthorId] nvarchar(4000)  NULL
+);
+GO
+
+-- --------------------------------------------------
+-- Creating all PRIMARY KEY constraints
+-- --------------------------------------------------
+
+-- Creating primary key on [Id] in table 'QuestionSet'
+ALTER TABLE [QuestionSet]
+ADD CONSTRAINT [PK_QuestionSet]
+    PRIMARY KEY ([Id] );
+GO
+
+-- Creating primary key on [Id] in table 'AnswerSet'
+ALTER TABLE [AnswerSet]
+ADD CONSTRAINT [PK_AnswerSet]
+    PRIMARY KEY ([Id] );
+GO
+
+-- --------------------------------------------------
+-- Creating all FOREIGN KEY constraints
+-- --------------------------------------------------
+
+-- --------------------------------------------------
+-- Script has ended
+-- --------------------------------------------------

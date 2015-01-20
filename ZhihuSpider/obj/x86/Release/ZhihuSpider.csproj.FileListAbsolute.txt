@@ -1,0 +1,16 @@
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\bin\Release\ZhihuSpider.exe.config
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\bin\Release\ZhihuSpider.exe.manifest
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\bin\Release\ZhihuSpider.application
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\bin\Release\ZhihuSpider.exe
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\bin\Release\ZhihuSpider.pdb
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\bin\Release\HtmlAgilityPack.dll
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.Form1.resources
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.Form2.resources
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.Properties.Resources.resources
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.exe.manifest
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.application
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.exe
+D:\Users\Administrator\Documents\Visual Studio 2010\Projects\ZhihuSpider\ZhihuSpider\obj\x86\Release\ZhihuSpider.pdb

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="QuestionSet" EntityType="Model1.Question" />
+    <EntitySet Name="AnswerSet" EntityType="Model1.Answer" />
+  </EntityContainer>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Decimal" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="String" Name="Title" Nullable="false" />
+    <Property Type="Decimal" Name="AnswerCount" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="String" Name="Topic" Nullable="false" />
+    <Property Type="Decimal" Name="FollowerCount" Nullable="false" />
+    <Property Type="Decimal" Name="ViewCount" Nullable="false" />
+    <Property Type="Decimal" Name="QuestionId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Decimal" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Type="Decimal" Name="Voteup" Nullable="false" />
+    <Property Type="DateTime" Name="CreateTime" />
+    <Property Type="Decimal" Name="CollectCount" Nullable="false" />
+    <Property Type="Decimal" Name="CommentCount" Nullable="false" />
+    <Property Type="Decimal" Name="QuestionId" Nullable="false" />
+    <Property Type="String" Name="Author" Nullable="true" />
+    <Property Type="String" Name="AuthorId" Nullable="true" />
+  </EntityType>
+</Schema>
